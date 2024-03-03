@@ -12,14 +12,14 @@ export default function FlipNote() {
 				<div className="details">
 					<h4 className="color1">asdddddddddddddddddddddddd</h4>
 					<h4 className="color2 margin">asdddddddddddddddd</h4>
-					<p>Dear Dad,asdasdasdas</p>
-					<p>Let's see.. .</p>
+					<p>Dear Dadasdasdasdas</p>
+					<p>Lets see</p>
 					<p>asdsdaaaaaaaaaaaaaou</p>
 					<p>haasdddddddddddddddddddd</p>
 					<p>asddddddddddddddddddddddddddddd</p>
-					<p>like, and yetsadddddddddddd</p>
+					<p>like and yetsadddddddddddd</p>
 					<p>sadasddddddddddddddddddddd</p>
-					<p>zxxxxxxxxxxxxxxxxxxxxx :)</p>
+					<p>zxxxxxxxxxxxxxxxxxxxxx</p>
 					<p className="text-right">zxxxxxxxxxxxxxxxxxxxxx</p>
 					<p className="text-right">Jeric</p>
 				</div>
