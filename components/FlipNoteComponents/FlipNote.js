@@ -20,7 +20,7 @@ export default function FlipNote() {
 					<p>sadasddddddddddddddddddddd</p>
 					<p>zxxxxxxxxxxxxxxxxxxxxx :)</p>
 					<p className="text-right">zxxxxxxxxxxxxxxxxxxxxx</p>
-					<p className="text-right">♥Jeric</p>
+					<p className="text-right">Jeric</p>
 				</div>
 			</div>
 		</>
