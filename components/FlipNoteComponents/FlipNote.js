@@ -1,3 +1,4 @@
+import Image from "next/image"
 export default function FlipNote() {
 
 	
@@ -6,7 +7,7 @@ export default function FlipNote() {
 			<div className="card">
 				<div className="imgBox">
 					<div className="bark"></div>
-					<img src="https://image.ibb.co/fYzTrb/lastofus.jpg" />
+					<Image src="https://image.ibb.co/fYzTrb/lastofus.jpg" width='300' height='400' />
 				</div>
 				<div className="details">
 					<h4 className="color1">asdddddddddddddddddddddddd</h4>
