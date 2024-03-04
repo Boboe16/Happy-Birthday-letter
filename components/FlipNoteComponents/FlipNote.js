@@ -7,7 +7,7 @@ export default function FlipNote() {
 			<div className="card">
 				<div className="imgBox">
 					<div className="bark"></div>
-					<Image src="https://image.ibb.co/fYzTrb/lastofus.jpg" alt='FlipNoteCover' width='300' height='400' />
+					<Image src="/cover.jpg" alt='FlipNoteCover' width='300' height='400' />
 				</div>
 				<div className="details">
 					<h4 className="color1">asdddddddddddddddddddddddd</h4>

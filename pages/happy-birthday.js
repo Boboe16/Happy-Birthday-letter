@@ -1,7 +1,5 @@
+import HappyBirthday from '../components/HappyBirthdayComponents/HappyBirthday.js'
+
 export default function Component() {
-	return (
-		<>
-			<h1>happy birthday yaa</h1>
-		</>
-	)
+	return <HappyBirthday />
 }
