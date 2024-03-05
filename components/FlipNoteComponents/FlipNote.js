@@ -1,7 +1,8 @@
 import Image from "next/image"
+import LeftArrow from "../PublicComponents/LeftArrow.js"
+
 export default function FlipNote() {
 
-	
 	return (
 		<>
 			<div className="card">
@@ -24,6 +25,7 @@ export default function FlipNote() {
 					<p className="text-right">Jeric</p>
 				</div>
 			</div>
+			<LeftArrow />
 		</>
 	)
 }

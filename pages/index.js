@@ -1,5 +1,5 @@
-import FlipNote from '../components/FlipNoteComponents/FlipNote.js'
+import HappyBirthday from '../components/HappyBirthdayComponents/HappyBirthday.js'
 
 export default function Component() {
-  return <FlipNote />
+  return <HappyBirthday />
 }

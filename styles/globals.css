@@ -8,6 +8,7 @@ body {
   background: pink; /*CAPE HONEY*/
   margin: 0px;
   padding: 0px;
+  overflow: hidden;
 }
 
 ::selection {
@@ -128,84 +129,79 @@ h4 {
 
 /*HappyBirthday*/
 
-
-.inline-blocks > .block{
-  display: inline-block;
-  vertical-align: middle;
-}
-.image{
-  height: 140px;
-  width: 140px;
-  border-radius: 180px;
-  border: 3px solid #fff;
-  margin-top: 22px;
-  margin-right: 40px;
-  
-}
-
-.twenty-one{
-  font-size: 240px;
-  font-family: 'Josefin Sans';
-  font-weight: 100;
-  line-height: 180px;
-  color: #fff;
-  margin: 40px 0;
-}
-
-.bday{
-  font-size: 24px;
-  color: #fff;
-  font-family: 'Josefin Sans';
-  font-weight: 300;
-  text-align: center;
-}
-
-.cover{
-  background: rgba(0,0,0,0.82);
+canvas {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top:0;
-  left: 0;
-  z-index: 1000;
-}
-
-#can{
-  position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+  background-color: deeppink;
 }
 
-
-.super-centered-container{
-  display:flex;
-  align-items: center;
-  justify-content: center;
+/*p {
+  margin: 0 0;
+  position: absolute;
+  font: 16px Verdana;
+  color: #eee;
+  height: 25px;
+  top: calc( 100vh - 30px );
+  text-shadow: 0 0 2px white;
 }
-
-/*html,body{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  background:#131313;
-  overflow:hidden;
-}*/
-
-a{
-  color: skyblue;
+p a {
   text-decoration: none;
+  color: #aaa;
 }
-
-.overlay-static{
-  position: relative;
-  z-index: 1000;
-  margin-bottom: 100px;
+span {
+  font-size: 11px;
 }
-
-/*body{
-  background: url('https://i.stack.imgur.com/okgSI.jpg');
-  background-position: center center;
-  background-size: contain;
+p > a:first-of-type {
+  font-size: 20px;
+}
+body {
+  overflow: hidden;
 }*/
+
+
+
+/* Left & Right Arrow */
+
+.right-arrow-container {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}
+
+.left-arrow-container {
+  position: fixed;
+  bottom: 5%;
+  left: 5%;
+}
+
+.arrow {
+  position: absolute;
+  padding: 20px; /* Arrow size */
+  box-shadow: 1px -1px 0 1px black inset;
+  -webkit-box-shadow: 2px -2px black inset;
+  border: solid transparent;
+  border-width: 0 0 2rem 2rem;
+  transition: 0.2s;
+}
+
+.arrow:hover {
+  box-shadow: 2px -2px 0 2px gray inset;
+  -webkit-box-shadow: 4px -4px gray inset;
+}
+
+.arrow-up    { transform:rotate(135deg) }
+.arrow-right { transform:rotate(225deg) }
+.arrow-down  { transform:rotate(-45deg) }
+.arrow-left  { transform:rotate(45deg) }
+
+
+/* Codepen layout: */
+/*html { height:100% }
+body { background-color:lavender }*/
+.arrow { top:50%;margin:-67px 0 0 -67px;left:35% }
+a:nth-child(2) { left:65% }
+
+/* Video link: */
+.video { font-family:sans-serif;font-size:20px;color:plum;top:2rem;left:2rem;position:absolute }
+.video:hover { color:orchid }
