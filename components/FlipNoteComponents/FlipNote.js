@@ -8,7 +8,7 @@ export default function FlipNote() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setImageLoaded(true);
-        }, 3000);
+        }, 5000);
 
         return () => clearTimeout(timer);
     }, []);
