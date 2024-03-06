@@ -39,11 +39,11 @@ export default function FlipNote() {
                     <p>Dear Ange</p>
                     <p>Happy birthday to you, my Love, </p>
                     <p>on your special day, I love you now,</p>
-                    <p>and always will, you&apos;re one of the </p>
-                    <p>best thing that has ever happened to me, </p>
-                    <p>I&apos;m lucky to have you in my life.</p>
-                    <p>I will always cherish you, always take care</p>
-                    <p>of yourself, I love you Baby</p>
+                    <p>and always will, though challenges may come our</p>
+                    <p>our way, remember, there&apos;s always light ahead</p>
+                    <p>in the darkest tunnels, we&apos;ll find our way.</p>
+                    <p>Baby, always remember to always</p>
+                    <p>take care of yourself, I love you Baby</p>
                     <p className="text-right">Happy Birthday Labidabs</p>
                     <p className="text-right">♡Jeric</p>
                 </div>
