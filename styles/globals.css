@@ -5,10 +5,9 @@
 
 body {
   font-family: 'Indie Flower', cursive !important;
-  background: #ff86e0; 
+  background: #ff86e0; /*CAPE HONEY*/
   margin: 0px;
   padding: 0px;
-  overflow: hidden;
 }
 
 ::selection {
@@ -124,8 +123,6 @@ h4 {
 .text-right {
   text-align: right;
 }
-
-
 
 /*HappyBirthday*/
 

@@ -10,11 +10,11 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/cat.png" />
       </Head>
       <DefaultSeo
-        title="To My Baby"
+        title="To My Love"
         description="♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡"
         openGraph={{
           url: `${process.env.NEXT_PUBLIC_URL}`,
-          title: "To My Love",
+          title: "To My Baby",
           description: "♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡",
           images: [
             {
