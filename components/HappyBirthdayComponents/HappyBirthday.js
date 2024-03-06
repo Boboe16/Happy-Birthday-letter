@@ -3,6 +3,7 @@ import RightArrow from '../PublicComponents/RightArrow.js'
 
 export default function Component() {
     useEffect(() => {
+    		var c = document.getElementById("c");
         var w = c.width = window.innerWidth,
 				h = c.height = window.innerHeight,
 				ctx = c.getContext( '2d' ),
@@ -365,7 +366,7 @@ export default function Component() {
 					
 					window.requestAnimationFrame( anim );
 					
-					ctx.fillStyle = 'white';
+					ctx.fillStyle = '#ff86e0';
 					ctx.fillRect( 0, 0, w, h );
 					
 					ctx.translate( hw, hh );

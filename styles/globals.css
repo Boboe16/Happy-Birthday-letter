@@ -5,7 +5,7 @@
 
 body {
   font-family: 'Indie Flower', cursive !important;
-  background: pink; /*CAPE HONEY*/
+  background: #ff86e0; 
   margin: 0px;
   padding: 0px;
   overflow: hidden;
@@ -133,7 +133,6 @@ canvas {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: deeppink;
 }
 
 /*p {
@@ -163,16 +162,27 @@ body {
 
 /* Left & Right Arrow */
 
+.arrow-container {
+/*  background-color: darkred;*/
+  width: 100px;
+  height: 100px;
+}
+
 .right-arrow-container {
   position: fixed;
-  bottom: 5%;
-  right: 5%;
+  bottom: 0;
+  right: 0;
 }
 
 .left-arrow-container {
   position: fixed;
-  bottom: 5%;
-  left: 5%;
+  bottom: 0;
+  left: 0;
+}
+
+.arrow-right {
+  position: relative;
+  left: 25px;
 }
 
 .arrow {
@@ -183,6 +193,7 @@ body {
   border: solid transparent;
   border-width: 0 0 2rem 2rem;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .arrow:hover {
@@ -199,8 +210,8 @@ body {
 /* Codepen layout: */
 /*html { height:100% }
 body { background-color:lavender }*/
-.arrow { top:50%;margin:-67px 0 0 -67px;left:35% }
-a:nth-child(2) { left:65% }
+/*.arrow { top:50%;margin:-67px 0 0 -67px;left:35% }*/
+/*a:nth-child(2) { left:65% }*/
 
 /* Video link: */
 .video { font-family:sans-serif;font-size:20px;color:plum;top:2rem;left:2rem;position:absolute }

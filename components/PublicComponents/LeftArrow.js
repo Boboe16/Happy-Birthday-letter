@@ -1,7 +1,12 @@
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+
 export default function Component() {
+	const router = useRouter()
+
 	return (
-		<div className='left-arrow-container'>
-			<a className="arrow arrow-left" title="Previous" href={`${process.env.NEXT_PUBLIC_URL}/flip-note`}></a>
+		<div className='left-arrow-container arrow-container'>
+			<p className="arrow arrow-left" title="Previous" onClick={() => router.push('/')} />
 		</div>
 	)
 }
