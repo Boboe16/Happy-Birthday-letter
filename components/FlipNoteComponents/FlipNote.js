@@ -1,21 +1,25 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import LeftArrow from "../PublicComponents/LeftArrow.js";
 
 export default function FlipNote() {
     const [imageLoaded, setImageLoaded] = useState(false);
 
-    const handleImageLoad = () => {
-        setImageLoaded(true);
-    };
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setImageLoaded(true);
+        }, 3000);
+
+        return () => clearTimeout(timer);
+    }, []);
 
     return (
         <>
             {!imageLoaded && (
                 <div className="loading-spinner">
-                    <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-										   <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
-										</svg>
+                    <svg className="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                        <circle className="path" fill="none" strokeWidth="6" strokeLinecap="round" cx="33" cy="33" r="30"></circle>
+                    </svg>
                 </div>
             )}
 
@@ -27,7 +31,6 @@ export default function FlipNote() {
                         alt='FlipNoteCover'
                         width={300}
                         height={400}
-                        onLoad={handleImageLoad}
                     />
                 </div>
                 <div className="details">
