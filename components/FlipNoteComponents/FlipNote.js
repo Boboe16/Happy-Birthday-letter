@@ -7,8 +7,8 @@ export default function FlipNote() {
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            setImageLoaded(true);
-        }, 5000);
+            document.getElementsByClassName('card')[0].style.visibility = 'visible'
+        }, 3000);
 
         return () => clearTimeout(timer);
     }, []);
@@ -23,7 +23,7 @@ export default function FlipNote() {
                 </div>
             )}
 
-            <div className={`card ${imageLoaded ? "visible" : "hidden"}`}>
+            <div className={`card`}>
                 <div className="imgBox">
                     <div className="bark"></div>
                     <Image
