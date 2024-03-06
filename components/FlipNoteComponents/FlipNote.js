@@ -1,13 +1,34 @@
 import Image from "next/image";
+import { useState } from "react";
 import LeftArrow from "../PublicComponents/LeftArrow.js";
 
 export default function FlipNote() {
+    const [imageLoaded, setImageLoaded] = useState(false);
+
+    const handleImageLoad = () => {
+        setImageLoaded(true);
+    };
+
     return (
         <>
-            <div className="card">
+            {!imageLoaded && (
+                <div className="loading-spinner">
+                    <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+										   <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+										</svg>
+                </div>
+            )}
+
+            <div className={`card ${imageLoaded ? "visible" : "hidden"}`}>
                 <div className="imgBox">
                     <div className="bark"></div>
-                    <img src="/cover2.jpg" alt='FlipNoteCover' />
+                    <Image
+                        src="/cover2.jpg"
+                        alt='FlipNoteCover'
+                        width={300}
+                        height={400}
+                        onLoad={handleImageLoad}
+                    />
                 </div>
                 <div className="details">
                     <h4 className="color1">🥰🥰😘😘😻😻</h4>
